@@ -1,0 +1,76 @@
+﻿@model Kostagram_1._1.Models.ApplicationUser
+
+<style>
+     dd{
+        margin:5px;
+    }
+</style>
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Ime)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Ime)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Prezime)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Prezime)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.DatumRodjenja)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.DatumRodjenja)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.DatumRegistracije)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.DatumRegistracije)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Pol)
+    </dt>
+
+    <dd>
+        @if (Model.Pol==true)
+        {
+            <p>Muški</p>
+        }
+        else
+        {
+            <p>Ženski</p>
+        }
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+
+    <dt>
+        <label>Broj telefona</label>
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.PhoneNumber)
+    </dd>
+
+</dl>
+@if (User.IsInRole("Administrator"))
+{
+    <input id="ButtonIzmeni" type="button" value="Izmeni korisnika" onclick="Izmeni()" />
+}

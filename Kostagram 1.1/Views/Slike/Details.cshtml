@@ -1,0 +1,236 @@
+﻿@model Kostagram_1._1.Models.Slika
+
+@{
+    ViewBag.Title = "Detalji";
+}
+<style>
+    .dugme{
+        margin:5px;
+    }
+    .horizontalniDivovi {
+        display: inline-block;
+    }
+</style>
+<h2>Details</h2>
+
+<div>
+    <h4>Slika</h4>
+    <hr />
+    <input id="SlikaId" type="hidden" value="@Model.SlikaId" />
+        
+    <img width="500" src="@Url.Action("CitajSliku", "Slike", new { id = Model.SlikaId })" />
+    @if (User.Identity.Name == Model.ImeKorisnika || User.IsInRole("Administrator"))
+    {
+        <div>
+            <input id="Button1" type="button"  class="btn btn-default dugme col-md-1" value="Izmeni" onclick="location.href='@Url.Action("Edit", "Slike", new { id = Model.SlikaId})'" />
+            <form id="formBrisanje" action="/Slike/Delete" method="post" class="col-md-1">
+                @Html.AntiForgeryToken()
+                <input type="hidden"  name="id" value="@Model.SlikaId" />
+                <input id="ButtonObrisi" type="button" class="btn btn-default dugme" value="Obrisi" onclick="" />
+            </form>
+            <div id="Dijalog" title="Brisanje slike?">
+                <p>Da li ste sigurni da zelite da obrisete sliku?</p>
+            </div>
+        </div>
+        <hr />
+    }
+
+    <br />
+    <div class="form-horizontal">
+        <img class="horizontalniDivovi img-thumbnail" width="50" src="@Url.Action("VratiProfilnu", "Account", new { imeKorisnika = Model.ImeKorisnika})" />
+        <p class="horizontalniDivovi">@Model.ImeKorisnika</p>
+    </div>
+    <p style="margin:10px; border-bottom:solid black 1px; width:500px;">@Model.Opis</p>
+    <div class="form-group" style="margin:10px; height:30px">
+        <label id="LajkLabela" for="LajkDugme" class="control-label col-md-1"></label>
+        @if (Request.IsAuthenticated)
+        {
+            <div id="LajkDugme" class="col-md-11">
+                <input id='ButtonLajk' type='button' value='Lajkuj' class='btn btn-success hidden' onclick='LajkujSliku()' />
+                <input id='ButtonOdLajk' type='button' value='Odlajkuj' class='btn btn-danger hidden' onclick='OdlajkujSliku()' />
+            </div>
+        }
+        else
+        {
+            <div>Prijavite se da biste mogli da lajkujete</div>
+        }
+    </div>
+
+    <div id="TagDiv" style="width:500px; border:groove; border-color:lightgray; margin:10px;">
+       <p>
+           @foreach (var tag in ViewBag.ListaTagova)
+           {
+               <a href="/Tagovi/PretragaTagova?rec=@tag.SadrzajTaga">@tag.SadrzajTaga </a>
+           }
+       </p>
+    </div>
+</div>
+
+<div>
+    <p><h4>Komentari</h4></p>
+    @if (Request.IsAuthenticated)
+    {
+        <div id="NoviKomentar">
+            <p>Napisite novi komentar:</p>
+            <textarea id="TextArea1" rows="5" cols="50" class="form-control"></textarea>
+            <input id="KomentarBtn" class="btn btn-default" type="button" value="Posalji" onclick="PosaljiKomentar()" />
+        </div>
+    }
+    else
+    {
+        <p>Prijavite se da bi komentarisali na sliku</p>
+    }
+    <br />
+    <div id="komentarDiv">
+        @Html.Action("_VratiKomentare", "Komentari", new { id = Model.SlikaId })
+    </div>
+</div>
+
+
+
+@section Scripts {
+    
+    <script>
+
+        $(document).ready(function () {
+
+            VratiLajkove()
+        });
+
+        function VratiLajkove() {
+
+            var slikaId = $("#SlikaId").val();
+            var zahtev = $.ajax({
+                url: "/SlikaLajkovi/VratiLajkove",
+                type: "GET",
+                contentType: "application/json",
+                data : {id : slikaId},
+                dataType: "json"
+            })
+
+            zahtev.done(function (Lajkovi) {
+
+                var dugme;
+                if (Lajkovi.lajkovano == 0) {
+                    $("#ButtonLajk").removeClass("hidden");
+
+                }else{
+                    $("#ButtonOdLajk").removeClass("hidden");
+
+                }
+                $("#LajkLabela").html(Lajkovi.brojLajkova + "    <span class='glyphicon glyphicon-thumbs-up'/>");
+
+            })
+        }
+
+        function LajkujSliku() {
+
+            var slikaId = $("#SlikaId").val();
+            var zahtev = $.post("/SlikaLajkovi/Lajkuj", {id : slikaId},
+                function (podaci) {
+
+                    $("#ButtonLajk").addClass("hidden");
+                    $("#ButtonOdLajk").removeClass("hidden");
+                    $("#LajkLabela").html(podaci + "    <span class='glyphicon glyphicon-thumbs-up'/>");
+                })
+        }
+
+        $( "#ButtonObrisi" ).on( "click", function() {
+            $( "#Dijalog" ).dialog( "open" );
+        });
+
+        $(function () {
+
+            $( "#Dijalog" ).dialog({
+                dialogClass: "no-close",
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                buttons: {
+                    "Da": function() {
+                        $( this ).dialog( "close" );
+                        $("#formBrisanje").submit();
+                    },
+                    "Ne": function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            });
+        } );
+
+        function OdlajkujSliku() {
+
+            var slikaId = $("#SlikaId").val();
+
+            var zahtev = $.post("/SlikaLajkovi/ObrisiLajk", {id : slikaId},
+                function (podaci) {
+
+                    $("#ButtonLajk").removeClass("hidden");
+                    $("#ButtonOdLajk").addClass("hidden");
+                    $("#LajkLabela").html(podaci + "    <span class='glyphicon glyphicon-thumbs-up'/>");
+                })
+        }
+
+        function PosaljiKomentar() {
+
+            $.post("/Komentari/UbaciKomentar", {
+                SlikaId : @Model.SlikaId,
+                TeloKomentara : $("#TextArea1").val()
+            },
+            function () {
+
+                vratiKomentare();
+            })
+
+        }
+
+        function vratiKomentare() {
+
+            var slikaId = $("#SlikaId").val();
+            var zahtev = $.ajax({
+                url: "/Komentari/_VratiKomentare",
+                type: "GET",
+                contentType: "application/json",
+                data : {id : slikaId},
+                dataType: "html"
+            })
+            zahtev.done(function (podaci) {
+
+                $("#komentarDiv").html(podaci);
+            })
+            zahtev.fail(function (greska) {
+
+                $("#komentarDiv").html(greska.statusText);
+            })
+        }
+
+        function obrisiKomentar(id) {
+
+            $.post("/Komentari/ObrisiKomentar", {
+                KomentarId: id
+            },
+            function (podaci) {
+                if (podaci == 1) {
+
+                    vratiKomentare();
+                }
+                else {
+
+                    alert("doslo je do greske");
+                }
+
+            })
+        }
+</script>
+<script>
+       
+</script>
+
+   
+    }

@@ -1,0 +1,113 @@
+﻿@model Kostagram_1._1.Models.PrivatnaPoruka
+
+@{
+    ViewBag.Title = "Inbox";
+}
+<style>
+    .button {
+        width:150px;
+        margin:5px;
+    }
+</style>
+
+<div><h2>Inbox</h2>
+
+    <div class=" form-horizontal col-md-2">
+    <input id="Button1"  class="btn btn-default button" type="button" width="75" value="Nova poruka" onclick="NovaPoruka()" />
+    <br />
+    <input id="Button1" class="btn btn-default button" type="button" width="75" value="Primljene poruke" onclick="PrimljenePoruke()" />
+    <input id="Button1" class="btn btn-default button" type="button" width="75" value="Poslate poruke" onclick="PoslatePoruke()" />    
+    </div>
+
+    <input id="Ime" type="hidden" value="@ViewBag.Ime" />
+    <div id="ParcijalniDiv" class="col-md-10 container body-content">
+        @Html.Action("_PrimljenePoruke")
+    </div>
+</div>
+
+@section Scripts{
+        <script>
+
+    $(document).ready(function () {
+
+        var ime = $("#Ime").val();
+        if (ime != "") {
+
+            NovaPoruka(ime);
+        
+        }
+    })
+
+    function NovaPoruka(ImePrimaoca) {
+
+        var zahtev = $.ajax({
+            type: "GET",
+            url: "/PrivatnePoruke/_NovaPoruka",
+            contentType: "application/json",
+            datatype: "json"
+        })
+        zahtev.done(function (podaci) {
+
+            $("#ParcijalniDiv").html(podaci)
+
+            if (ImePrimaoca != undefined) {
+
+                $("#TextPrimalac").val(ImePrimaoca);
+            }
+        })
+        zahtev.fail(function () {
+            $("#ParcijalniDiv").html("doslo je do greske")
+        })
+    }
+
+    function PrimljenePoruke() {
+        var zahtev = $.ajax({
+            type: "GET",
+            url: "/PrivatnePoruke/_PrimljenePoruke",
+            contentType: "application/json",
+            datatype: "json"
+        })
+        zahtev.done(function (podaci) {
+
+            $("#ParcijalniDiv").html(podaci)
+        })
+        zahtev.fail(function () {
+            $("#ParcijalniDiv").html("doslo je do greske")
+        })
+    }
+
+    function PoslatePoruke() {
+        var zahtev = $.ajax({
+            type: "GET",
+            url: "/PrivatnePoruke/_PoslatePoruke",
+            contentType: "application/json",
+            datatype: "json"
+        })
+        zahtev.done(function (podaci) {
+
+            $("#ParcijalniDiv").html(podaci)
+        })
+        zahtev.fail(function () {
+            $("#ParcijalniDiv").html("doslo je do greske")
+        })
+    }
+
+    function CitajPoruku(porukaId) {
+
+        var zahtev = $.ajax({
+            type: "GET",
+            url: "/PrivatnePoruke/_PorukaDetalji",
+            contentType: "application/json",
+            data: {id: porukaId},
+            datatype: "json"
+        })
+        zahtev.done(function (podaci) {
+
+            $("#ParcijalniDiv").html(podaci)
+        })
+        zahtev.fail(function () {
+            $("#ParcijalniDiv").html("doslo je do greske")
+        })
+    }
+</script>
+    }

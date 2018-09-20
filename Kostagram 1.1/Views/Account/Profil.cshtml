@@ -1,0 +1,144 @@
+﻿@model Kostagram_1._1.Models.ApplicationUser
+
+
+@{
+    ViewBag.Title = "Profil";
+}
+<style>
+    .dugme {
+        width: 150px;
+        margin: 5px;
+    }
+</style>
+
+<h2>Profil</h2>
+
+<div>
+    <img width="200" src="@Url.Action("VratiProfilnu", "Account",  new { ImeKorisnika = User.Identity.Name})" />
+    <h3 class="col-md-offset-2" float="left" id="ImeKorisnika">@User.Identity.Name</h3>
+    <hr />
+    <div class="col-md-2">
+        <input id="ButtonDetalji" class="btn btn-primary dugme" type="button" value="Detalji" onclick="Detalji()"  /><hr />
+        <input id="ButtonSlike" class="btn btn-primary dugme" type="button" value="Moje slike" onclick="Slike()" /><hr />
+        <input id="ButtonKomentari" class="btn btn-primary dugme" type="button" value="Moji Komentari" onclick="Komentari()" /><hr />
+        <input id="ButtonLajkovi" class="btn btn-primary dugme" type="button" value="Lajkovane slike" onclick="SlikaLajkovi()" />
+    </div>
+    <div id="ParcijalniDiv" class="col-md-10 container body-content">
+       
+       
+</div>
+</div>
+<p>
+
+</p>
+
+@section Scripts{
+    <script>
+
+        $(document).ready(function () {
+    
+            var imeKorisnika = $("#ImeKorisnika").html();
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Account/_ProfilDetalji",
+                contentType: "application/json",
+                data : {ime : imeKorisnika},
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.error(function (greska) {
+
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        })
+
+        function Slike() {
+
+            var imeKorisnika = $("#ImeKorisnika").html();
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Slike/_ProfilSlike",
+                contentType: "application/json",
+                data : {ime : imeKorisnika},
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.error(function (greska) {
+
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        }
+    </script>
+
+    <script>
+        function Komentari() {
+
+            var imeKorisnika = $("#ImeKorisnika").html();
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Komentari/_ProfilKomentari",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.fail(function () {
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        }
+
+        function SlikaLajkovi() {
+
+            var imeKorisnika = $("#ImeKorisnika").html();
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/SlikaLajkovi/_ProfilSlikaLajkovi",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+                
+                $("#ParcijalniDiv").html(podaci);
+            })
+
+            zahtev.fail(function (greska) {
+
+                
+                $("#ParcijalniDiv").html("Doslo je do greske");
+            })
+        }
+
+        function Detalji() {
+
+                var zahtev = $.ajax({
+                type: "GET",
+                url: "/Account/_ProfilDetalji",
+                contentType: "application/json",
+                data: { ime: @User.Identity.Name },
+                datatype: "json"
+            })
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.fail(function () {
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        }
+    </script>
+    }

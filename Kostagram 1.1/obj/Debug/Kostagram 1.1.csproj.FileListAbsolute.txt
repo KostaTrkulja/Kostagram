@@ -1,0 +1,386 @@
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\csc.exe
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CSharp.Core.targets
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Collections.Immutable.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Reflection.Metadata.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\vbc.exe
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe.config
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll.config
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.pdb
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Web.Infrastructure.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Owin.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\WebGrease.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.pdb
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.pdb
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csprojResolveAssemblyReference.cache
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.InitialCreate.resources
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csproj.GenerateResource.Cache
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.MenjanjeLajkKlasa.resources
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\PagedList.dll
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\bin\PagedList.xml
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.IzmenaPoruka.resources
+d:\my documents\visual studio 2015\Projects\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.KaskadePriBrisanju.resources
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\csc.exe
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Collections.Immutable.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Reflection.Metadata.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\vbc.exe
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe
+G:\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe.config
+G:\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll.config
+G:\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.pdb
+G:\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Web.Infrastructure.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Owin.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\PagedList.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\WebGrease.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\PagedList.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.pdb
+G:\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csprojResolveAssemblyReference.cache
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.InitialCreate.resources
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.MenjanjeLajkKlasa.resources
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.IzmenaPoruka.resources
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.KaskadePriBrisanju.resources
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csproj.GenerateResource.Cache
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.dll
+G:\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.pdb
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\csc.exe
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\vbc.exe
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll.config
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.pdb
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Owin.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\PagedList.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\WebGrease.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\PagedList.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.pdb
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csprojResolveAssemblyReference.cache
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.InitialCreate.resources
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.MenjanjeLajkKlasa.resources
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.IzmenaPoruka.resources
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.KaskadePriBrisanju.resources
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csproj.GenerateResource.Cache
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.pdb
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\csc.exe
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Collections.Immutable.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Reflection.Metadata.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\vbc.exe
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe.config
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll.config
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.pdb
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Web.Infrastructure.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Owin.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\PagedList.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\WebGrease.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\PagedList.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.pdb
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csprojResolveAssemblyReference.cache
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.InitialCreate.resources
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.MenjanjeLajkKlasa.resources
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.IzmenaPoruka.resources
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.KaskadePriBrisanju.resources
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csproj.GenerateResource.Cache
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.dll
+D:\My Documents\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.pdb
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.dll
+C:\Users\Kole\Desktop\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.xml
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.dll
+G:\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\csc.exe
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Collections.Immutable.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\System.Reflection.Metadata.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\vbc.exe
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\roslyn\VBCSCompiler.exe.config
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll.config
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Kostagram 1.1.pdb
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Web.Infrastructure.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Owin.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\PagedList.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\WebGrease.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\PagedList.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Providers.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Helpers.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Mvc.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Optimization.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.Razor.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Deployment.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\System.Web.WebPages.Razor.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Antlr3.Runtime.pdb
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Newtonsoft.Json.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\EntityFramework.SqlServer.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Core.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Facebook.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Cookies.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.OAuth.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Google.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.Twitter.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csprojResolveAssemblyReference.cache
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.InitialCreate.resources
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.MenjanjeLajkKlasa.resources
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.IzmenaPoruka.resources
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram_1._1.Migrations.KaskadePriBrisanju.resources
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.csproj.GenerateResource.Cache
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.dll
+D:\My Documents\Backup\Kostagram 1.1\Kostagram 1.1\obj\Debug\Kostagram 1.1.pdb

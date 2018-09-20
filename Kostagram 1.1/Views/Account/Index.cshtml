@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.ApplicationUser>
+
+<p></p>
+<table class="table">
+    
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@Url.Action("Korisnik", "Account", new { ime = item.UserName})">
+                <div>
+                    <img width="50" class="thumbnail" height="50" style="display:inline-block" src="@Url.Action("VratiProfilnu", "Account", new { ImeKorisnika = item.UserName})" />
+
+                    <p style="display:inline-block">@item.UserName</p>
+                </div>
+                
+            </a>
+        </td>
+        
+        
+    </tr>
+}
+
+</table>

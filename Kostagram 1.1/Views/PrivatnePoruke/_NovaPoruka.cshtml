@@ -1,0 +1,55 @@
+﻿@model Kostagram_1._1.Models.PrivatnaPoruka
+
+<form class="form-horizontal" action="/PrivatnePoruke/Create" method="post">
+    @Html.AntiForgeryToken()
+    <input hidden value="@DateTime.Now" name="DatumKreiranja" />
+    <div class="form-group">
+        <label for="TextPosiljaoc" class="control-label col-md-2">Posiljaoc</label>
+        <div class="col-md-8">
+            <input id="TextPosiljaoc" name="ImePosiljaoca" class="form-control" type="text" value="@User.Identity.Name" readonly />
+        </div>
+        
+    </div>
+    <div class="form-group">
+        <label for="TextPrimaoc" class="control-label col-md-2">Primalac</label>
+        <div class="col-md-8">
+            <input id="TextPrimalac" name="ImePrimaoca" class="form-control" type="text" value="@ViewBag.Ime" />
+        </div>
+        
+    </div>
+
+    <div class="form-group">
+        <label for="TextNaslov" class="control-label col-md-2">Naslov</label>
+        <div class="col-md-8">
+            <input id="TextNaslov" name="Naslov" class="form-control" type="text" value="" />
+        </div>
+
+    </div>
+
+    <div class="col-md-offset-2" style="width:700px" >
+        <textarea id="TextSadrzaj" name="Sadrzaj" rows="10" class="form-control" cols="300"></textarea>
+    </div>
+    <input id="Button1" type="submit" class="col-md-offset-2" value="Posalji" />
+</form>
+
+<script>
+
+    $(function () {
+        $("#TextPrimalac").autocomplete({
+            source: function (request, response) {
+
+                $.ajax({
+                    url: "/Account/KorisniciPretraga",
+                    type:"get",
+                    dataType: "json",
+                    data: { q: request.term },
+                    success: function (podaci) {
+                        response(podaci.length === 1 && podaci[0].length === 0 ? [] : podaci);
+                    }
+                });
+            },
+            minLength: 3
+            
+        });
+    })
+</script>

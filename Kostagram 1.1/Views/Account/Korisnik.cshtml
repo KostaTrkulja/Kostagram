@@ -1,0 +1,285 @@
+﻿@model Kostagram_1._1.Models.ApplicationUser
+
+@{
+    ViewBag.Title = Model.UserName;
+}
+<style>
+    .dugme{
+        width:150px;
+        margin:5px;
+    }
+</style>
+
+
+<div>
+    <img width="100" src="@Url.Action("VratiProfilnu", "Account", new { ImeKorisnika = Model.UserName})" />
+    <h3 id="ImeKorisnika">@Model.UserName</h3>    
+    @if (Request.IsAuthenticated)
+    {
+        <input id="Button1" class="btn btn-default" type="button" value="Posalji poruku" 
+               onclick="location.href='@Url.Action("Inbox", "PrivatnePoruke", new {ImePrimaoca = Model.UserName })'" />
+        
+    }
+    <div id="AdminDiv" style="display:inline-block">
+        @if (User.IsInRole("Administrator"))
+        {
+            if (ViewBag.Admin)
+            {
+                <input id="ButtonNeAdmin" type="button"
+                       class="btn btn-group-justified" value="Ukini administratora" onclick="UkiniAdmina()" />
+            }
+            else
+            {
+
+                <input id="ButtonAdmin" type="button"
+                    class="btn btn-group-justified" value="Postavi za administratora" onclick="Adminuj()" />
+            }
+        }
+    </div>
+    <div id="DijalogAdmin">
+
+    </div>
+    <div style="float:right" >
+       @if (Request.IsAuthenticated)
+       {
+        if (ViewBag.DaLiMePratis)
+        {
+            <p>Korisnik te prati <span style="color:green" class="glyphicon glyphicon-ok"></span></p>
+        }
+        else
+        {
+            <p>Korisnik te ne prati <span style="color:red" class="glyphicon glyphicon-remove"></span></p>
+        }
+        <br />
+        <div id="divPracenje" class="form-group form-horizontal">
+            <label for="CheckboxPracenje" class="control-label">Prati korisnika?</label>            
+                @if (ViewBag.DaLiTePratim)
+                {
+                    <input id="CheckboxPracenje" class="form-control" type="checkbox" checked onchange="NePrati()" />
+                }
+                else
+                {
+                    <input id="CheckboxPracenje" class="form-control" type="checkbox" onchange="Prati()" />
+                }
+            
+        </div>
+       }
+
+    </div>
+    <hr />
+    <div class="col-md-2">
+        <input id="ButtonDetalji" class="btn btn-primary dugme" type="button" value="Detalji" onclick="Detalji()"/>
+        <input id="ButtonSlike" class="btn btn-primary dugme" type="button" value="Slike" onclick="Slike()" />
+        <input id="ButtonKomentari" class="btn btn-primary dugme" type="button" value="Komentari" onclick="Komentari()" />
+        <input id="ButtonLajkovi" class="btn btn-primary dugme" type="button" value="Lajkovane slike" onclick="SlikaLajkovi()" />
+        <hr />
+        <div>
+            
+        </div>
+    </div>
+    <div id="ParcijalniDiv" class="col-md-10 container body-content">
+        @Html.Action("_KorisnikDetalji", new { ime = Model.UserName})
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var imeKorisnika = $("#ImeKorisnika").html();
+        $(function () {
+
+            $("#DijalogAdmin").dialog({
+                dialogClass: "no-close",
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 500
+                },
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                buttons: {
+                    "Ok": function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+                })
+        });
+
+        
+        function Adminuj() {
+
+            $.post("/Account/PostaviZaAdmina", { korisnik: imeKorisnika }, function (podaci) {
+                if (podaci.rez === 1) {
+                    $("#DijalogAdmin").html("Korisnik je postavljen za administratora");
+                    $("#AdminDiv").html("<input id='ButtonAdmin' style='display:inline-block' type='button' class='btn btn-group-justified' value='Ukini administratora' onclick='UkiniAdmina()' />")
+                    $("#DijalogAdmin").dialog("open");
+                }
+                else {
+                    $("#DijalogAdmin").html("Greška");
+                    $("#DijalogAdmin").dialog("open");
+                }                
+            })
+        }
+
+        
+        function UkiniAdmina() {
+
+            $.post("/Account/UkiniAdmina", { korisnik: imeKorisnika }, function (podaci) {
+                if (podaci.rez === 1) {
+                    $("#DijalogAdmin").html("Korisnik  više nije administrator");
+                    $("#AdminDiv").html("<input id='ButtonAdmin' style='display:inline-block' type='button' class='btn btn-group-justified' value='Postavi za administratora' onclick='Adminuj()' />")
+                    $("#DijalogAdmin").dialog("open");
+                }
+                else {
+                    $("#DijalogAdmin").html("Greška");
+                    $("#DijalogAdmin").dialog("open");
+                }
+            })
+        }
+
+        function Prati() {
+
+            var cb = $("#CheckboxPracenje").checked;
+            
+            if (!cb) {                
+                
+
+                var zahtev = $.post("/Account/PratiKorisnika", { praceni: imeKorisnika }, function (podaci) {
+                    if (podaci.rez === 1) {
+                        $("#divPracenje").html("Pratite korisnika")
+                    } else {
+                        $("#divPracenje").html("Došlo je do greške")
+                    }
+                    
+                })
+                               
+            } 
+        }
+
+        function NePrati() {
+            var cb = $("#CheckboxPracenje").checked;
+            
+            
+
+            var zahtev = $.post("/Account/PrestaniPracenje", { praceni: imeKorisnika }, function (podaci) {
+                if (podaci.rez === 1) {
+                    $("#divPracenje").html("Više ne pratite korisnika")
+                } else {
+                    $("#divPracenje").html("Došlo je do greške")
+                }
+            })
+        }
+
+        function Izmeni() {
+
+            
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Account/_ProfilDetalji",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.error(function (greska) {
+
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        }
+        
+        function Slike() {
+
+            
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Slike/_ProfilSlike",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.error(function (greska) {
+
+                $("#ParcijalniDiv").html("doslo je do greske")
+            })
+        }
+
+        function Komentari() {
+
+            
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Komentari/_ProfilKomentari",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.fail(function () {
+                $("#ParcijalniDiv").html("Došlo je do greške")
+            })
+        }
+
+        function SlikaLajkovi() {
+
+            var imeKorisnika = $("#ImeKorisnika").html();
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/SlikaLajkovi/_ProfilSlikaLajkovi",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+
+            zahtev.done(function (podaci) {
+                
+                $("#ParcijalniDiv").html(podaci);
+            })
+
+            zahtev.fail(function (greska) {
+
+                
+                $("#ParcijalniDiv").html("Došlo je do greške");
+            })
+        }
+
+        function Detalji() {
+
+            
+
+            var zahtev = $.ajax({
+                type: "GET",
+                url: "/Account/_KorisnikDetalji",
+                contentType: "application/json",
+                data: { ime: imeKorisnika },
+                datatype: "json"
+            })
+            zahtev.done(function (podaci) {
+
+                $("#ParcijalniDiv").html(podaci)
+            })
+            zahtev.fail(function () {
+                $("#ParcijalniDiv").html("Došlo je do greške")
+            })
+        }
+    </script>
+    
+    
+    
+    }

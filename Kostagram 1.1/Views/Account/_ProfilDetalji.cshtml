@@ -1,0 +1,155 @@
+﻿@model Kostagram_1._1.Models.ApplicationUser
+
+<h4>Upravljanje detaljima na profilu</h4>
+
+<form class="form-horizontal" action="/Account/KorisnikEdit" method="Post" enctype="multipart/form-data">
+
+    <input type="hidden" name="ImeKorisnika" value="@Model.UserName" />
+
+    <div class="form-group">
+        <label for="File1" class=" col-md-2 control-label">Promenite sliku</label>
+        <div class="col-md-10">
+            <input id="File1" type="file" name="poslatiFajl" class="form-control" onchange="ucitajSliku()" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Img1" class="col-md-2 control-label">Odabrana slika</label>
+        <div class="col-md-10">
+            <img id="Img1" width="200" />
+        </div>
+    </div>
+    <br />
+    
+    <div class="form-group">
+        <label for="Text1" class=" col-md-2 control-label">Ime</label>
+        <div class="col-md-10">
+            <input id="Text1" class="form-control" type="text" value="@Model.Ime" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Text2" class="control-label col-md-2">Prezime</label>
+        <div class="col-md-8">
+            <input id="Text2" class="form-control" type="text" value="@Model.Prezime" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="DatumRodjenja" class="control-label col-md-2">Datum rodjenja</label>
+        <div class="col-md-8">
+            <input id="DatumRodjenja" class="form-control" name="DatumRodjenja" type="text" value="@Html.DisplayFor(x => x.DatumRodjenja)" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="SelectPol" class="control-label col-md-2">Pol</label>
+        <div class="col-md-8">
+            <select id="SelectPol" name="Pol" class="form-control">
+                <option value="true">Muški</option>
+                <option value="false">Ženski</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="TextEmail" class="control-label col-md-2">Email</label>
+        <div class="col-md-8">
+            <input id="TextEmail" name="Email" class="form-control" type="email" value="@Model.Email" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="TextTelefon" class="control-label col-md-2">Broj telefona</label>
+        <div class="col-md-8">
+            <input id="TextTelefon" name="PhoneNumber" class="form-control" type="text" value="@Model.PhoneNumber" />
+        </div>
+    </div>
+
+    <div class="form-group col-md-offset-2 col-md-10">
+        <input id="Submit1" type="submit" class="btn btn-default" value="Sacuvaj podatke" />
+    </div>   
+</form>
+<form id="formBrisanje" action="/Account/Obrisi" method="post">
+    <input type="hidden" name="ime" value="@Model.UserName" />
+    <input id="ButtonObrisi" class="btn btn-danger" style="display:inline-block; float:right" type="button" value="Ugasi nalog" />
+    <div id="DijalogBrisanje">
+        <p>Da li ste sigurni da želite da obrišete nalog?</p>
+        <p>Ova akcija je nepovratna</p>
+    </div>
+</form>
+   
+    <script>
+        $("#ButtonObrisi").on( "click", function() {
+            $("#DijalogBrisanje").dialog( "open" );
+        });
+
+        $(function () {
+            var ImeKorisnika = $("#ImeKorisnika").html();
+            $("#DijalogBrisanje").dialog({
+
+                dialogClass: "no-close",
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                buttons: {
+                    "Obriši": function() {
+                        $( this ).dialog( "close" );
+                        $("#formBrisanje").submit();
+                    },
+                    "Otkaži": function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            });
+            })
+
+
+
+        $(document).ready(function () {
+
+            if (@Model.Pol.ToString().ToLower() === true) {
+                $("#SelectPol").val("true");
+
+            }
+            else {
+        
+                $("#SelectPol").val("false");
+            }
+        });
+
+
+           function ucitajSliku() {
+               var fajlElem = document.getElementById("File1");
+            if (fajlElem.files.length != 0 && fajlElem.files[0].type.match(/image.*/)) {
+                var reader = new FileReader();
+                reader.readAsDataURL(fajlElem.files[0]);
+
+                reader.onload = function (e) {
+                    var imgElem = document.getElementById("Img1");
+                    imgElem.src = reader.result;
+                };
+                reader.onerror = function (e) {
+                    alert("Ne moze da se ucita slika");
+                };
+            } else {
+                alert("Odaberite sliku");
+            }
+        }
+
+           $("#DatumRodjenja").datepicker({
+               dateFormat: "dd.MM.yy",
+               changeYear: true,
+               changeMonth: true,
+               firstDay: 1,
+               dayNamesMin: ["Ned", "Pon", "Uto", "Sre", "Cet", "Pet", "Sub"]
+           });
+        
+    </script>
+

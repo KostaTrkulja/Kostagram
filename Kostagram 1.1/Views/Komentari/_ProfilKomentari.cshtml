@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.Komentar>
+
+<div class="form-horizontal">
+
+    @foreach (var kom in Model)
+    {
+        <div style="margin:15px">
+            <a href="@Url.Action("Details", "Slike", new { id = kom.SlikaId})">                
+                <div style="border-color:cornflowerblue; border-width:1px; border-style:solid; padding:5px;">
+                    <p>@kom.TeloKomentara</p>
+                </div>               
+                <p style="float:right">@kom.DatumKreiranja.ToLocalTime().ToShortDateString()</p>
+            </a>
+        </div>
+    }
+</div>

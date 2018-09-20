@@ -1,0 +1,64 @@
+﻿@model Kostagram_1._1.Models.Slika
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Slika</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeKorisnika)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeKorisnika)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FajlSlike)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FajlSlike)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipFajla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipFajla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumKreiranja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumKreiranja)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

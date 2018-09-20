@@ -1,0 +1,54 @@
+﻿@model Kostagram_1._1.Models.Slika
+
+@{
+    ViewBag.Title = "Izmena slike";
+}
+
+<h2>Izmena</h2>
+
+
+@if (User.Identity.Name == Model.ImeKorisnika || User.IsInRole("Administrator"))
+{
+    using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Slika</h4>
+            <hr />
+
+            <img width="500" src="@Url.Action("CitajSliku", "Slike", new {id = Model.SlikaId })" />
+            <input type="hidden" value="@Model.SlikaId" />
+
+            <div class="form-group">
+                <label for="TextOpis" class="control-label">Tagovi:</label>
+                <textarea id="TextOpis" name="Opis" class="form-control" rows="2" cols="20">@Model.Opis</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="TextTag" class="control-label">Tagovi:</label>
+                <input id="TextTag" class="form-control" name="Tagovi" type="text" value="@ViewBag.tagovi" />
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Sacuvaj" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>Nemate pravo da menjate ovu sliku</p>
+}
+
+<div>
+    @Html.ActionLink("Nazad na sliku", "Details", new { id = Model.SlikaId})
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    
+}

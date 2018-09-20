@@ -1,0 +1,44 @@
+﻿@model Kostagram_1._1.Models.PrivatnaPoruka
+
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.ImePosiljaoca)
+    </dt>
+
+    <dd>
+        <p id="ImeZaOdgovor">@Model.ImePosiljaoca</p>
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.ImePrimaoca)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.ImePrimaoca)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Naslov)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Naslov)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.DatumKreiranja)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.DatumKreiranja)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Sadrzaj)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Sadrzaj)
+    </dd>
+</dl>
+<input id="Button1" class="btn btn-default" type="button" value="Odgovori na poruku" onclick="@("NovaPoruka('"+Model.ImePosiljaoca+"')")" />

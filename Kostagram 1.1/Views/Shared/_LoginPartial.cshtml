@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+            <a href="/Account/Profil">Zdravo @User.Identity.Name <span><img width="20" height="20" src="@Url.Action("VratiProfilnu", "Account", new { ImeKorisnika = User.Identity.Name})" /></span></a>            
+        </li>
+        <li>
+            <a href="/PrivatnePoruke/Inbox"><span id="EmailSpan" style="font-size:15px;  " class="glyphicon glyphicon-envelope "></span></a>
+        </li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()"><span style="font-size:15px;" class="glyphicon glyphicon-log-out"></span></a></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+        <a href="@Url.Action("Register", "Account", new { id = "registerLink" })"><span style="font-size:15px;"  class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="@Url.Action("Login", "Account", new { id = "loginLink" })"><span style="font-size:15px;" class="glyphicon glyphicon-log-in"></span></a></li>
+        
+    </ul>
+}
+
+

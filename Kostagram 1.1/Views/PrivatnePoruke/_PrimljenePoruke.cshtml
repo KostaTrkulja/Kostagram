@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.PrivatnaPoruka>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Naslov</th>
+            <th>Posiljaoc</th>
+            <th>Datum slanja</th>
+            <th>Procitano</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var poruka in Model)
+        {
+            <tr onclick="CitajPoruku(@poruka.PrivatnaPorukaId)">
+                <td><a href="/PrivatnePoruke/Poruka?id=@poruka.PrivatnaPorukaId">@poruka.Naslov</a> </td>
+                <td>
+                    <img width="30" height="30" src="@Url.Action("VratiProfilnu", "Account", new { imeKorisnika = poruka.ImePosiljaoca})" />
+                    @poruka.ImePosiljaoca
+                </td>
+                <td>@poruka.DatumKreiranja</td>
+                @if (poruka.Procitana == true)
+                {
+                    <td><span style="font-size:large" class="glyphicon glyphicon-folder-open"></span></td>
+                }
+                else
+                {
+                    <td><span style="font-size:large" class="glyphicon glyphicon-folder-close"></span></td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+   
+</script>

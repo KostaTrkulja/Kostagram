@@ -1,0 +1,167 @@
+﻿@model Kostagram_1._1.Models.RegistracijaModel
+@{
+    ViewBag.Title = "Registracija";
+}
+
+<style>
+    #Form1 label.error {
+        color: red;
+    }
+</style>
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Napravi novi nalog.</h4>
+    <hr />
+    <p class=" col-md-offset-2 col-md-10">Polja sa * su obavezna</p>
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Ime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Ime, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Ime, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Prezime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Prezime, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Prezime, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="DatumRodjenja" class="col-md-2 control-label">Datum rodjenja</label>
+        <div class="col-md-10">
+            <input id="DatumRodjenja" name="DatumRodjenja" class="form-control" type="text" />
+            @Html.ValidationMessageFor(model => model.DatumRodjenja, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Pol" class="col-md-2 control-label">Pol</label>
+        <div class="col-md-10">
+            <select id="Pol" name="Pol" class="form-control">
+                <option value="true">Muski</option>
+                <option value="false">Zenski</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.KorisnickoIme, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.KorisnickoIme, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.KorisnickoIme, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Lozinka, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.Lozinka, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Lozinka, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PotvrdaLozinke, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.PotvrdaLozinke, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PotvrdaLozinke, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Registruj" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+   <script>
+
+        $("#DatumRodjenja").datepicker({
+            dateFormat: "dd.mm.yy",
+            changeYear: true,
+            changeMonth: true,
+            firstDay: 1,
+            dayNamesMin: ["Ned", "Pon", "Uto", "Sre", "Cet", "Pet", "Sub"]
+        });
+
+        $("#Form1").validate({
+            rules : {
+                Ime : {
+                    required: true,
+                    maxlength: 20
+                },
+
+                Prezime: {
+                    required: true,
+                    maxlength: 20
+                },
+                Email: {
+                    required: true,
+                    email: true
+                },
+                KorisnickoIme: {
+                    required: true,
+                    maxlength: 20
+                },
+                Lozinka: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 50
+                },
+                PotvrdaLozinke: {
+                    required: true,
+                    equalTo: "#Lozinka"
+                },
+                DatumRodjenja:{
+                    required: true,
+                }       
+
+            },
+            messages: {
+                Ime: {
+                    required: "Niste uneli ime",
+                    maxlength: "Ime ima najvise 20 karaktera"
+                },
+                Prezime: {
+                    required: "Niste uneli prezime",
+                    maxlength: "Prezime ima najvise 20 karaktera"
+                },
+                Email: {
+                    required: "Niste uneli Email",
+                    email: "Niste uneli validnu email adresu"
+                },
+                KorisnickoIme: {
+                    required: "Niste uneli korisnicko ime",
+                    maxlength: "Korisnicko ime ima najvise 20 karaktera"
+                },
+                Lozinka: {
+                    required: "Niste uneli lozinku",
+                    minlength: "Lozinka ima najmanje 6 karaktera",
+                    maxlength: "Lozinka ima najvise 50 karaktera"
+                },
+                PotvrdaLozinke: {
+                    required: "Niste potvrdili lozinku",
+                    equalTo: "Potvrda ne odgovara unetoj lozinki"
+                },
+                DatumRodjenja: {
+                    required: "Niste uneli datum rodjenja",
+                }
+
+            }
+        })
+</script>
+}

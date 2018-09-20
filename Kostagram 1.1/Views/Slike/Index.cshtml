@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.Slika>
+
+@{
+    ViewBag.Title = "Indeks";
+}
+
+<h2>Indeks slika</h2>
+
+<p>
+    @if (Request.IsAuthenticated)
+    {
+        <a href="/Slike/Create"><span style="font-size:20px; color:black" class="glyphicon glyphicon-plus-sign"></span></a>
+    }
+</p>
+<div class="form-horizontal">
+    <div class="col-md-offset-3 col-md-4">
+        <div id="SlikeDiv">
+            @Html.Action("_VratiSlike", "Slike", new { stranica = 1 })
+        </div>
+        <input id="Button1" type="button" style="width:600px; height:40px; margin:auto" class="btn btn-primary" value="Ucitaj jos slika" onclick="UcitajSlike()" />
+    </div>
+    @if (Request.IsAuthenticated)
+    {
+        <div class=" col-md-offset-2 col-md-3" style="border-radius:5px; background-color:lightgray; padding:5px">
+            <h4>Ljudi koje pratite:</h4>
+            @foreach (var ime in ViewBag.listaPracenih)
+            {
+                <a href="/Account/Korisnik/@ime" style="margin:10px">
+                    <img width="20" src="@Url.Action("VratiProfilnu", "Account", new { ImeKorisnika = ime} )" />
+                    @ime
+                </a><br />
+            }
+        </div>
+    }
+
+</div>
+
+
+@section Scripts{
+    
+        <script>
+            var stranica = 2;
+
+            function UcitajSlike() {
+               
+                var zahtev = $.ajax({
+                    type: "get",
+                    url: "/Slike/_VratiSlike",
+                    contentType: "application/json",
+                    data: { stranica: stranica},
+                    dataType: "html"
+                })
+
+                zahtev.done(function (podaci) {
+
+                    stranica += 1;
+
+                    $("#SlikeDiv").append(podaci);
+                })
+
+                zahtev.fail(function (greska) {
+
+                    $("#SlikeDiv").append("doslo je do greske", greska.statusText);
+                })
+            }
+        </script>
+    }

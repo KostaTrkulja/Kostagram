@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.Slika>
+
+<div class="form-horizontal">
+    @foreach (var slika in Model)
+    {
+        <div style="background-color:lightgray; border-radius:5px; padding:10px; margin:10px; width:370px;">
+            <div>
+                <img width="50" class="thumbnail" height="50" style="display:inline-block" src="@Url.Action("VratiProfilnu", "Account", new { ImeKorisnika = slika.ImeKorisnika })" />
+
+                <p style="display:inline-block">@slika.ImeKorisnika</p>
+            </div>
+            <p style="float:right">@slika.DatumKreiranja.ToString("dd.MM.yyyy")</p>
+            @if (slika.FajlSlike != null)
+            {
+                <a href="@Url.Action("Details", "Slike", new { id = slika.SlikaId })">
+                    <img width="350" src="@Url.Action("CitajSliku", "Slike", new { id = slika.SlikaId })" />
+                </a>
+            }
+            <p style="margin-top:5px">@slika.Opis</p>
+            }
+        </div>
+    }
+    </div>

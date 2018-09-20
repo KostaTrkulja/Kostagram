@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    @*<link rel="stylesheet" href="/resources/demos/style.css">*@
+    <link href="~/Content/themes/base/core.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/theme.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="Div" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Naslovna", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Slike", "Index", "Slike")</li>
+                    <li>@Html.ActionLink("Korisnici", "Index", "Account")</li>
+                    
+                    <li>      
+                        <input id="Text1" type="text" style="margin-top:10px; " class="form-control" placeholder="Pretrazi slike" />                                         
+                    </li>
+                    <li>
+                        <a onclick="Pretrazi()" ><span style="display:inline-block; font-size:20px;" class="glyphicon glyphicon-search"></span></a>
+                    </li>
+                    
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-ui-1.12.0.min.js"></script>
+    @RenderSection("scripts", required: false)
+    <script>
+               
+
+        $("#Text1").keyup(function (taster) {
+            
+            if (taster.keyCode==13) {
+                Pretrazi();
+            }
+        })
+        
+        function Pretrazi() {
+            var pretraga = $("#Text1").val();
+            window.location.href = "/Tagovi/PretragaTagova?rec=" + pretraga;
+        }
+
+        $(function () {
+           
+            $("#Text1").autocomplete({
+                source: function (request, response) {
+
+                    $.ajax({
+                        url: "Tagovi/TagoviZaPretragu",
+                        type: "get",
+                        dataType: "json",
+                        data: {q:request.term},
+                        success: function (podaci) {
+                            response(podaci.length === 1 && podaci[0].length === 0 ? [] : podaci);
+                        }
+                    });
+                },
+                minLength: 2,
+                appendTo: "#Div"
+                 
+            });
+        })
+    </script>
+</body>
+</html>

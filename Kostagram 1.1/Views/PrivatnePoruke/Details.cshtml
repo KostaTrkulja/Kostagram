@@ -1,0 +1,74 @@
+﻿@model Kostagram_1._1.Models.PrivatnaPoruka
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PrivatnaPoruka</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImePosiljaoca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImePosiljaoca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImePrimaoca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImePrimaoca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naslov)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naslov)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sadrzaj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sadrzaj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumKreiranja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumKreiranja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poslata)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poslata)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Procitana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Procitana)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PrivatnaPorukaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

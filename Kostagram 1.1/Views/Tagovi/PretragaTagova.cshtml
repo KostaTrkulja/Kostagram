@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.Slika>
+
+@{
+    ViewBag.Title = "Pretraga";
+}
+
+<h2>Pretraga</h2>
+
+<div>
+    @foreach (var slika in Model)
+    {
+        <div style="float:left; background-color:darkgrey; border-radius:5px; padding:10px; margin:10px; width:270px;">
+            <a href="/Slike/Details?id=@slika.SlikaId">
+                <p>
+                    <img width="30" src="@Url.Action("VratiProfilnu", "Account", new { imeKorisnika = slika.ImeKorisnika})" />
+                    @slika.ImeKorisnika
+                </p>
+                <img width="250" src="@Url.Action("CitajSliku", "Slike", new { id = slika.SlikaId})" />
+                <p style="width:250px;">@slika.Opis</p>
+            </a> 
+            
+        </div>
+    }
+</div>
+
+
+

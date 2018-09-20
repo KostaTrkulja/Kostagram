@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Kostagram_1._1.Models.Komentar>
+
+    @foreach (var kom in Model)
+    {
+        <div style="margin:5px;  width:500px">
+            <div >
+                <img class="horizontalniDivovi thumbnail" width="50" src="@Url.Action("VratiProfilnu", "Account", new { imeKorisnika = kom.ImeKorisnika })" />
+                <p class="horizontalniDivovi"><b>@kom.ImeKorisnika</b></p>
+            </div>
+            <br />
+            <div style="border-color:cornflowerblue; border-width:1px; border-style:solid; padding:5px;">                    
+                <p>@kom.TeloKomentara</p>                        
+            </div>
+            @if (User.Identity.Name == kom.ImeKorisnika || User.IsInRole("Administrator"))
+            {
+                <input id="Button1" class="btn btn-default" type="button" value="Obrisi" onclick="obrisiKomentar(@kom.KomentarId)" />
+            }
+            <p style="float:right">@kom.DatumKreiranja.ToLocalTime().ToShortDateString()</p>
+        </div>
+        <br />
+        <br />
+    
+    }
+
+
+
+  
+
